@@ -29,12 +29,15 @@ curl -s https://github.com/matilda1740/server-adminlabs/main/setup.sh | bash
 
 After script finishes:
 
-Visit http://<your_droplet_ip>/info.php in a browser → PHP info page should load.
-
-Check versions:
+1. Check installed package versions:
 ```bash
 git --version
 httpd -v
 mysql --version
 php -v
 ```
+2. Verify the URLS
+Visit http://<your_droplet_ip>/index.html (served by Nginx)
+Visit http://<your_droplet_ip>/info.php (processed by Apache+PHP via Nginx)
+
+
